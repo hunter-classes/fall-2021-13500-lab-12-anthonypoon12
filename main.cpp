@@ -21,5 +21,10 @@ int main(){
         std::cout<<i<<"\n";
     for (int i: v2)
         std::cout<<i<<"\n";
+    std::vector<int> vv1{1,2,3};
+    std::vector<int> vv2{4,5};
+    std::vector<int> ans = sumPairWise(vv1,vv2);
+    for (int i: ans)
+        std::cout<<i<<"\n";
     return 0;
 }
