@@ -7,3 +7,10 @@ std::vector<int> makeVector(int n){
         output.push_back(i);
     return output;
 }
+std::vector<int> goodVibes(const std::vector<int>& v){
+    std::vector<int> output;
+    for (int i: v)
+        if (i>0)
+            output.push_back(i);
+    return output;
+}
