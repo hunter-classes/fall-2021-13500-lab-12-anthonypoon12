@@ -34,3 +34,12 @@ TEST_CASE("Task C"){
         CHECK(v1[i]==v3[i]);
     CHECK(v2.size()==0);
 }
+TEST_CASE("TASK D"){
+    
+    std::vector<int> vv1{1,2,3};
+    std::vector<int> vv2{4,5};
+    std::vector<int> ans = {5,7,3};
+    std::vector<int> output = sumPairWise(vv1,vv2);
+    for (int i=0; i<output.size();i++)
+        CHECK(output[i]==ans[i]);
+}
