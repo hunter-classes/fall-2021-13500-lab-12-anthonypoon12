@@ -14,3 +14,14 @@ TEST_CASE("return vector"){
         CHECK(test2[i]==i);
     }
 }
+TEST_CASE("TaskB"){
+    std::vector<int> v{1,2,-1,3,4,-1,6};
+    std::vector<int> final = {1,2,3,4,6};
+    std::vector<int> test = goodVibes(v);
+    for (int i = 0; i < test.size(); i++){
+        CHECK(test[i] == final[i]);
+    }
+    std::vector<int> v1{-1};
+    std::vector<int> test1 = goodVibes(v1);
+    CHECK(test.empty()==false);
+}
