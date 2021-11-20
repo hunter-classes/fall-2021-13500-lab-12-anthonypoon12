@@ -14,5 +14,12 @@ int main(){
     std::vector<int> goodvibe = goodVibes(v);
     for (int i=0; i < goodvibe.size(); i++)
         std::cout<<goodvibe[i]<<"\n";
+    std::vector<int> v1{1,2,3};
+    std::vector<int> v2{4,5};
+    gogeta(v1,v2);
+    for (int i: v1)
+        std::cout<<i<<"\n";
+    for (int i: v2)
+        std::cout<<i<<"\n";
     return 0;
 }
