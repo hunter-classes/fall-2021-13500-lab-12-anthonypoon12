@@ -14,3 +14,8 @@ std::vector<int> goodVibes(const std::vector<int>& v){
             output.push_back(i);
     return output;
 }
+void gogeta(std::vector<int> &goku, std::vector<int> &vegeta){
+    for (int i: vegeta)
+        goku.push_back(i);
+    vegeta.clear();
+}
