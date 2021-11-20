@@ -25,3 +25,12 @@ TEST_CASE("TaskB"){
     std::vector<int> test1 = goodVibes(v1);
     CHECK(test.empty()==false);
 }
+TEST_CASE("Task C"){
+    std::vector<int> v1{1,2,3};
+    std::vector<int> v2{4,5};
+    std::vector<int> v3={1,2,3,4,5};
+    gogeta(v1,v2);
+    for (int i =0; i<v1.size(); i++)
+        CHECK(v1[i]==v3[i]);
+    CHECK(v2.size()==0);
+}
